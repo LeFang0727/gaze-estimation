@@ -1,0 +1,40 @@
+---
+params:
+    batch_size: 16
+    epoch: 30
+    lr: 0.0001
+    decay: 0.1
+    decay_step: 10
+
+save:
+    metapath: "D:/JetBrains/PythonCode/model/Results/"
+    folder: mpiigaze
+    name: DriverGaze
+    step: 1
+
+data:
+    image: "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Image"
+    label:
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p00.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p01.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p02.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p03.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p04.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p05.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p06.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p07.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p08.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p09.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p10.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p11.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p12.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p13.label"
+            - "D:/JetBrains/GazeDataset/GazePoint/MPIIGaze/Label/p14.label"
+    header: True
+    name: mpiigaze
+    isFolder: False
+
+pretrain: True
+device: 0
+reader: reader_adap
+#map: "/home/huds/code/GazeForDriver/DriverGaze/Masker/360-masker.jpg"

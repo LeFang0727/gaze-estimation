@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# PyCharm
+.idea/
+
+# Training results
+Results/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

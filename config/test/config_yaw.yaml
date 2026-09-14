@@ -1,0 +1,14 @@
+---
+load:
+    begin: 10
+    end: 100
+    steps: 10
+data: 
+    image: "/home/huds/YawDDFace/"
+    label: "/home/huds/YawDDFace/YawDD.txt"
+    name: Yaw
+    header: False
+    isFolder: True
+savename: "evaluation-yaw"
+device: 0
+reader: reader_Yaw
