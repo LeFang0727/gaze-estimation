@@ -1,0 +1,30 @@
+---
+params:
+    batch_size: 16
+    epoch: 30
+    lr: 0.0001
+    decay: 0.1
+    decay_step: 10
+
+save:
+    metapath: "D:/JetBrains/PythonCode/model/Results/"
+    folder: lbw
+    name: DriverGaze
+    step: 1
+
+data:
+    image: "/home/huds/Datasets/LBW_Normal"
+    label:
+      - "/home/huds/Datasets/LBW_Normal/label/train1.txt"
+      - "/home/huds/Datasets/LBW_Normal/label/train2.txt"
+      - "/home/huds/Datasets/LBW_Normal/label/train3.txt"
+      - "/home/huds/Datasets/LBW_Normal/label/train4.txt"
+      - "/home/huds/Datasets/LBW_Normal/label/train5.txt"
+    header: False
+    name: lbw
+    isFolder: False
+
+pretrain: True
+device: 0
+reader: reader_LBW
+#map: "/home/huds/code/GazeForDriver/DriverGaze/Masker/360-masker.jpg"

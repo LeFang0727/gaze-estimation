@@ -11,10 +11,8 @@ from importlib import import_module
 from easydict import EasyDict as edict
 
 
-# ==========================
-# PyCharm直接修改这里
-# ==========================
-TEST_SUBJECT = "p00"
+
+TEST_SUBJECT = "Subject01"
 
 
 def gazeto3d(gaze):
@@ -45,7 +43,7 @@ def angular(v1, v2):
 
 def main(train, test, test_subject=None):
     if test_subject is None:
-        raise ValueError("TEST_SUBJECT must be p00~p14 for strict LOPO evaluation.")
+        raise ValueError("TEST_SUBJECT must be subject01~xx for strict LOPO evaluation.")
 
     reader = import_module(f"reader.{test.reader}")
 
@@ -172,8 +170,8 @@ def main(train, test, test_subject=None):
 
 
 if __name__ == "__main__":
-    train_path = "config/train/config_mpii.yaml"
-    test_path = "config/test/config_mpii.yaml"
+    train_path = "config/train/config_lbw.yaml"
+    test_path = "config/test/config_lbw.yaml"
 
     with open(train_path, "r", encoding="utf-8") as f:
         train_conf = edict(yaml.safe_load(f))

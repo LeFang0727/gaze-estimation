@@ -166,9 +166,9 @@ def train(cfg, test_subject=None):
 
 
 if __name__ == "__main__":
-    config_path = "config/train/config_mpii.yaml"
+    config_path = "config/train/config_lbw.yaml"
     cfg = load_config(config_path)
 
-    # PyCharm 直接修改：p00 ~ p14
-    TEST_SUBJECT = "p00"
+
+    TEST_SUBJECT = "Subject01"
     train(cfg, test_subject=TEST_SUBJECT)

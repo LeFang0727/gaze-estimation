@@ -1,0 +1,19 @@
+---
+load:
+    begin: 1
+    end: 30
+    steps: 1
+data:
+    image: "/home/huds/Datasets/LBW_Normal"
+    label:
+      - "/home/huds/Datasets/LBW_Normal/label/train1.txt"
+      - "/home/huds/Datasets/LBW_Normal/label/train2.txt"
+      - "/home/huds/Datasets/LBW_Normal/label/train3.txt"
+      - "/home/huds/Datasets/LBW_Normal/label/train4.txt"
+      - "/home/huds/Datasets/LBW_Normal/label/train5.txt"
+    name: lbw
+    header: False
+    isFolder: False
+savename: "evaluation-lbw"
+device: 0
+reader: reader_LBW
